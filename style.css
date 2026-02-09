@@ -25,7 +25,7 @@ body{
   height:78vh;
   background:
     linear-gradient(to bottom, rgba(0,0,0,.15), rgba(0,0,0,.75)),
-    url("photos/hero.jpg") center/cover no-repeat;
+    url("photos/couples.jpg") center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
