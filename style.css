@@ -24,13 +24,13 @@ body{
 .couples{
   height:78vh;
   background:
-    linear-gradient(to bottom, rgba(0,0,0,.15), rgba(0,0,0,.75)),
-    url("photos/couples.jpg") center/cover no-repeat;
+    linear-gradient(to bottom, rgba(0,0,0,.10), rgba(0,0,0,.65)),
+    url("photos/hero.jpg") center/cover no-repeat;
   display:flex;
-  align-items:center;
+  align-items:flex-end;      /* moves content down */
   justify-content:center;
   text-align:center;
-  padding:24px;
+  padding:24px 24px 64px;    /* extra space from bottom */
 }
 
 .overlay{
