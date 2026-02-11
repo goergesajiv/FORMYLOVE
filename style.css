@@ -21,19 +21,40 @@ body{
   color:var(--text);
 }
 
+
 .couples{
+  position:relative;
   height:78vh;
-  background:
-    linear-gradient(to bottom, rgba(0,0,0,.10), rgba(0,0,0,.65)),
-    url("photos/couples.jpg") center/contain no-repeat;
   display:flex;
-  align-items:flex-end;      
+  align-items:flex-end;
   justify-content:center;
   text-align:center;
-  padding:24px 24px 0px;   
+  padding:24px 24px 0px;
+  overflow:hidden;
+}
+
+.slideshow{
+  position:absolute;
+  inset:0;
+  z-index:0;
+}
+
+.slideshow img{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  opacity:0;
+  transition:opacity 1s ease-in-out;
+}
+
+.slideshow img.active{
+  opacity:1;
 }
 
 .overlay{
+  position:relative;
+  z-index:2;
   max-width:720px;
   background: rgba(20,18,36,.55);
   border:1px solid rgba(255,255,255,.10);
@@ -63,6 +84,8 @@ p{
   text-decoration:none;
   font-weight:650;
 }
+
+/* MAIN CONTENT */
 
 main{
   max-width:920px;
