@@ -6,14 +6,22 @@
   <title>For You, My Pashooo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body>  
 
   <header class="couples">
+
+    <div class="slideshow">
+      <img src="photos/couples.jpg" class="active">
+      <img src="photos/DLFRONT.jpg">
+      <img src="photos/02.jpg">
+    </div>
+
     <div class="overlay">
       <h1>For You, My Pashooo</h1>
       <p>A little corner of the internet that’s just for you.</p>
       <a class="cta" href="#start">Start reading</a>
     </div>
+
   </header>
 
   <main>
@@ -56,7 +64,6 @@
       <h2>🎶 Our Song</h2>
       <p>Press play while you read.</p>
 
-      <!-- Replace PUT_SPOTIFY_ID_HERE with your Spotify embed track ID -->
       <div class="embed">
         <iframe
           style="border-radius:12px"
@@ -81,7 +88,6 @@
       </p>
     </section>
 
-    <!-- Hidden PS -->
     <section class="card ps">
       <h2>PS</h2>
       <p>
@@ -95,6 +101,17 @@
   <footer>
     <p>Made with love, just for you ❤️</p>
   </footer>
+
+  <script>
+    const slides = document.querySelectorAll('.slideshow img');
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 2000);
+  </script>
 
 </body>
 </html>
