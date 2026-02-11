@@ -93,7 +93,7 @@ main{
 .grid img{
   width:100%;
   height:260px;
-  object-fit:cover;
+  object-fit:contain;
   border-radius:14px;
   border:1px solid rgba(255,255,255,.10);
 }
