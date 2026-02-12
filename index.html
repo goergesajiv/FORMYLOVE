@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -8,100 +9,100 @@
 </head>
 <body>  
 
-  <!-- FULLSCREEN SLIDESHOW INTRO -->
-  <section class="intro">
+  <!-- FULLSCREEN HERO -->
 
-    <div class="slideshow">
-      <img src="photos/couples.jpg" class="active">
-      <img src="photos/s1.jpg">
-      <img src="photos/ss1.jpg">
-      <img src="photos/ss3.jpg">
-      <img src="photos/ss4.jpg">
-    </div>
+  <header class="hero">
 
-    <div class="overlay">
-      <h1>For You, My Pashooo</h1>
-      <p>A little corner of the internet that’s just for you.</p>
-      <a class="cta" href="#start">Start Reading</a>
-    </div>
+```
+<div class="slideshow">
+  <img src="photos/couples.jpg" class="active">
+  <img src="photos/s1.jpg">
+  <img src="photos/ss1.jpg">
+  <img src="photos/ss3.jpg">
+  <img src="photos/ss4.jpg">
+</div>
 
-  </section>
+<!-- Dark gradient overlay -->
+<div class="gradient"></div>
 
-  <!-- MAIN CONTENT -->
-  <main id="start">
+<!-- Bottom text -->
+<div class="overlay">
+  <h1>For You, My Pashooo</h1>
+  <p>A little corner of the internet that’s just for you.</p>
+  <a class="cta" href="#start">Start reading</a>
+</div>
+```
 
-    <section class="card">
-      <h2>🌙 How We Started</h2>
-      <p>
-        When I fell in love with you with your dance.
-      </p>
-    </section>
+  </header>
 
-    <section class="card">
-      <h2>💫 What You Mean to Me</h2>
-      <p>
-        PASTE YOUR TEXT HERE.
-      </p>
-    </section>
+  <main>
 
-    <section class="card">
-      <h2>🌱 How You’ve Changed Me</h2>
-      <p>
-        PASTE YOUR TEXT HERE.
-      </p>
-    </section>
+```
+<section id="start" class="card">
+  <h2>🌙 How We Started</h2>
+  <p>
+    When I fell in love with you with your dance.
+  </p>
+</section>
 
-    <section class="card">
-      <h2>📸 Photos</h2>
-      <div class="grid">
-        <img src="photos/couples.jpg" alt="Us 1" />
-        <img src="photos/ss3.jpg" alt="Us 2" />
-        <img src="photos/ss4.jpg" alt="Us 3" />
-        <img src="photos/ss5.jpg" alt="Us 4" />
-      </div>
-    </section>
+<section class="card">
+  <h2>💫 What You Mean to Me</h2>
+  <p>
+    PASTE YOUR TEXT HERE.
+  </p>
+</section>
 
-    <section class="card">
-      <h2>🎶 Our Song</h2>
-      <p>Press play while you read.</p>
+<section class="card">
+  <h2>🌱 How You’ve Changed Me</h2>
+  <p>
+    PASTE YOUR TEXT HERE.
+  </p>
+</section>
 
-      <div class="embed">
-        <iframe
-          style="border-radius:12px"
-          src="https://open.spotify.com/embed/track/PUT_SPOTIFY_ID_HERE"
-          width="100%"
-          height="152"
-          frameborder="0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy">
-        </iframe>
-      </div>
-    </section>
+<section class="card">
+  <h2>📸 Photos</h2>
+  <div class="grid">
+    <img src="photos/couples.jpg" alt="Us 1" />
+    <img src="photos/ss3.jpg" alt="Us 2" />
+    <img src="photos/ss4.jpg" alt="Us 3" />
+    <img src="photos/ss1.jpg" alt="Us 4" />
+  </div>
+</section>
 
-    <section class="card letter">
-      <h2>💌 A Letter</h2>
-      <p>
-        WRITE YOUR FINAL LETTER HERE.
-      </p>
-      <p class="signoff">
-        Happy Valentine’s Day.<br>
-        Love, Goerge ❤️
-      </p>
-    </section>
+<section class="card">
+  <h2>🎶 Our Song</h2>
+  <p>Press play while you read.</p>
+  <div class="embed">
+    <iframe
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/track/PUT_SPOTIFY_ID_HERE"
+      width="100%"
+      height="152"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
 
-    <section class="card ps">
-      <h2>PS</h2>
-      <p>
-        If you ever doubt yourself or us, come back here.
-        This is me reminding you that you are loved — always.
-      </p>
-    </section>
+<section class="card letter">
+  <h2>💌 A Letter</h2>
+  <p>
+    WRITE YOUR FINAL LETTER HERE.
+  </p>
+  <p class="signoff">
+    Love, Goerge ❤️
+  </p>
+</section>
+```
 
   </main>
 
   <footer>
     <p>Made with love, just for you ❤️</p>
   </footer>
+
+  <!-- Slideshow Script -->
 
   <script>
     const slides = document.querySelectorAll('.slideshow img');
@@ -111,7 +112,7 @@
       slides[index].classList.remove('active');
       index = (index + 1) % slides.length;
       slides[index].classList.add('active');
-    }, 2000);
+    }, 3000);
   </script>
 
 </body>
