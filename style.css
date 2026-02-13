@@ -130,6 +130,8 @@ main{
   border-radius:18px;
   padding:24px;
   margin:20px 0;
+   position: relative;
+  z-index: 3;
 }
 
 .letter .signoff{
