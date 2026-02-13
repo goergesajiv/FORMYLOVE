@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>  
+<body>
 
   <!-- Background Music -->
   <audio id="bgMusic" loop>
     <source src="audio/AUDIO.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- FULLSCREEN HERO -->
+  <!-- HERO -->
   <header class="couples">
 
     <div class="slideshow">
@@ -25,7 +25,7 @@
       <img src="photos/ss4.jpg">
     </div>
 
-    <!-- Floating Hearts -->
+    <!-- Hearts -->
     <div class="hearts">
       <span>❤️</span>
       <span>❤️</span>
@@ -34,10 +34,8 @@
       <span>❤️</span>
     </div>
 
-    <!-- Dark Gradient -->
     <div class="gradient"></div>
 
-    <!-- Bottom Text -->
     <div class="overlay">
       <h1>For You, My Pashooo</h1>
       <p>A little corner of the internet that’s just for you.</p>
@@ -58,19 +56,18 @@
       <p>PASTE YOUR TEXT HERE.</p>
     </section>
 
-    <!-- ✅ COMBINED LETTER SECTION -->
-    <section class="card letter">
+    <!-- ✅ BIGGER LETTER SECTION -->
+    <section class="card letter large-letter">
       <h2>💌 A Letter</h2>
 
       <p>
-        WRITE YOUR FINAL LETTER HERE.
+        WRITE YOUR FULL VALENTINE LETTER HERE.
       </p>
 
       <p>
-        <!-- Add the “how you've changed me” text here -->
-        ADD HERE HOW SHE HAS CHANGED YOU,
+        ADD HOW SHE HAS CHANGED YOU,
         WHAT YOU'VE LEARNED,
-        AND HOW YOU'VE GROWN BECAUSE OF HER.
+        AND EVERYTHING YOU WANT TO SAY.
       </p>
 
       <p class="signoff">
@@ -84,7 +81,7 @@
     <p>Made with love, just for you ❤️</p>
   </footer>
 
-  <!-- Slideshow Script -->
+  <!-- SLIDESHOW (WORKING VERSION) -->
   <script>
     const slides = document.querySelectorAll('.slideshow img');
     let index = 0;
@@ -96,13 +93,13 @@
     }, 4000);
   </script>
 
-  <!-- Music Play Trigger -->
+  <!-- MUSIC PLAY FIX -->
   <script>
     const music = document.getElementById("bgMusic");
     const startBtn = document.querySelector(".cta");
 
     startBtn.addEventListener("click", function () {
-      music.play().catch(err => console.log("Playback blocked:", err));
+      music.play().catch(() => {});
     });
   </script>
 
