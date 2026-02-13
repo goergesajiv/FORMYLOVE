@@ -9,9 +9,14 @@
 <body>  
 
   <!-- Background Music -->
-  <audio autoplay loop>
-    <source src="music.mp3" type="audio/mpeg">
-  </audio>
+ <script>
+  const music = document.getElementById("bgMusic");
+  const startBtn = document.querySelector(".cta");
+
+  startBtn.addEventListener("click", () => {
+    music.play();
+  });
+</script>
 
   <!-- FULLSCREEN HERO -->
   <header class="couples">
