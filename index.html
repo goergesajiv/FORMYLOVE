@@ -58,44 +58,5 @@
       <p>PASTE YOUR TEXT HERE.</p>
     </section>
 
-    <section class="card">
-      <h2>🌱 How You’ve Changed Me</h2>
-      <p>PASTE YOUR TEXT HERE.</p>
-    </section>
-
+    <!-- ✅ COMBINED LETTER SECTION -->
     <section class="card letter">
-      <h2>💌 A Letter</h2>
-      <p>WRITE YOUR FINAL LETTER HERE.</p>
-      <p class="signoff">Love, Goerge ❤️</p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Made with love, just for you ❤️</p>
-  </footer>
-
-  <!-- Slideshow Script -->
-  <script>
-    const slides = document.querySelectorAll('.slideshow img');
-    let index = 0;
-
-    setInterval(() => {
-      slides[index].classList.remove('active');
-      index = (index + 1) % slides.length;
-      slides[index].classList.add('active');
-    }, 4000);
-  </script>
-
-  <!-- ✅ MUSIC PLAY FIX (MOVED HERE) -->
-  <script>
-    const music = document.getElementById("bgMusic");
-    const startBtn = document.querySelector(".cta");
-
-    startBtn.addEventListener("click", function () {
-      music.play().catch(err => console.log("Playback blocked:", err));
-    });
-  </script>
-
-</body>
-</html>
