@@ -63,3 +63,35 @@
       <h2>💫 Valentine Letter </h2>
       <p>PASTE YOUR TEXT HERE.</p>
     </section>
+
+    </main>
+
+  <footer>
+    <p>Made with love, just for you ❤️</p>
+  </footer>
+
+  <!-- Slideshow Script -->
+  <script>
+    const slides = document.querySelectorAll('.slideshow img');
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 4000);
+  </script>
+
+  <!-- Music Play Trigger -->
+  <script>
+    const music = document.getElementById("bgMusic");
+    const startBtn = document.querySelector(".cta");
+
+    startBtn.addEventListener("click", function () {
+      music.play().catch(err => console.log("Playback blocked:", err));
+    });
+  </script>
+
+</body>
+</html>
+
