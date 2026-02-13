@@ -6,10 +6,8 @@
   <title>For You, My Pashooo</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>  
-
-  <!-- Background Music -->
- <script>
+  
+  <script>
   const music = document.getElementById("bgMusic");
   const startBtn = document.querySelector(".cta");
 
@@ -17,6 +15,14 @@
     music.play();
   });
 </script>
+
+<body>  
+
+  <!-- Background Music -->
+ <audio id="bgMusic" loop>
+  <source src="photos/AUDIO.mp3" type="audio/mpeg">
+</audio>
+
 
   <!-- FULLSCREEN HERO -->
   <header class="couples">
